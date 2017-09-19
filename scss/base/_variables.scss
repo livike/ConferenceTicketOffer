@@ -1,0 +1,57 @@
+//Descriptive color variables
+
+$white			: #fff;
+$black			: #000;
+$grey       : #999;
+$blue-cerulean	: #18a8e1;
+$blue-mint-tulip: #bee6f2;
+$red-torch      : #ff0033;
+$grey-alabaster :#f8f8f8;
+$grey-alabaster: #f8f8f8;
+
+//=====
+$shuttle-gray	: #515F67;
+$athens-gray	: #dfe2e6;
+$yellow-orange	: #ffa949;
+$footer-gray	: #7c8082;
+$malibu-blue	: #4bcaff;
+//=====
+
+//Functional color variables
+$color-light-blue  :$blue-mint-tulip;
+$color-dark-blue   :$blue-cerulean;
+$color-grey        :$shuttle-gray;
+$color-red         :$red-torch;
+$color-grey-backgr  :$grey-alabaster;
+
+//=====
+$color-bck-dark		: $shuttle-gray;
+$color-bck-blue		: $malibu-blue;
+$color-bck-light	: $white;
+$color-bck-navbar	: rgba($shuttle-gray,0.9);
+//=====
+
+$color-text-light	: $white;
+$color-text-dark	: $shuttle-gray;
+
+$color-link-hover			: $malibu-blue;
+$color-link-active			: $malibu-blue;
+$color-link-active-border	: $malibu-blue;
+$color-link-visited			: $white;
+
+$color-body			:$shuttle-gray;
+
+//Font stacks
+
+$stack-sans-serif	: Helvetica, Arial, sans-serif;
+$stacks-segoeui		: 'Segoe UI', $stack-sans-serif;
+
+//Asset paths
+
+$path-img		:'../images';
+$path-font		:'../fonts';
+
+//Media query breakpoints
+
+$breakpoint-narrow		:'(min-width: 768px)';
+$breakpoint-wide		:'(min-width: 1024px)';

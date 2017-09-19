@@ -1,0 +1,146 @@
+.header-wrapper{
+  position: relative;
+}
+.nav-bar{
+	background-color: $black;
+	position:fixed;
+	width:100%;
+	top:0;
+	height:75px;
+	z-index: 100;
+}
+
+.logo {
+	position: fixed;
+  top: 20px;
+}
+
+.navigation{
+  padding: 15px;
+  list-style: none;
+  overflow: hidden;
+  background-color: $black;
+  width:100%;
+	// clear: both;
+	// max-height: 0;
+	// vertical-align: middle;
+	transition: max-height .2s ease-out;
+  position:absolute;
+  top:75px;
+  display:none;
+
+	@media #{$breakpoint-narrow	}{
+    background-color: transparent;
+
+		display: inline-block;
+		// float:right;
+		clear:none;
+		max-height: none;
+    top:25px;
+    padding:0;
+    margin-left: 53vw;
+
+	}
+}
+
+input[type=checkbox]:checked ~ ul {
+    display: block
+}
+
+.navigation li {
+	@media #{$breakpoint-narrow	}{
+		float: left;
+		margin-right:60px;
+		margin-bottom:0;
+	}
+}
+
+.navigation li a {
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+  color: $white;
+}
+.navigation li a:visited {
+  color:$white;
+}
+
+.menu-icon {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	position: relative;
+	user-select: none;
+  top: 35px;
+  right: 24px;
+
+	@media #{$breakpoint-narrow	}{
+		display:none;
+	}
+}
+
+.navicon {
+	background: $white;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
+}
+
+.navicon:before,
+.navicon:after {
+	background: $white;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
+}
+
+.navicon:before {
+	top: 5px;
+}
+
+.navicon:after {
+	top: -5px;
+}
+
+.menu-btn {
+	display:none;
+}
+
+.menu-btn:checked ~ .nav {
+ 	max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+ 	background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+ 	transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+ 	transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ 	top: 0;
+}
+
+.hero{
+	text-align: center;
+	padding:250px 0 150px 0;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}

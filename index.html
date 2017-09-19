@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tickets</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header>
+    <div id="headerContainer">
+      <nav class ="nav-bar">
+					<div class="header-wrapper">
+						<a href="/"><img class="logo" src="images/menu-logo-2.svg" alt="HR Tech world logo"></a>
+						<input class="menu-btn" type="checkbox" id="menu-btn" />
+	  				<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+						<ul class="navigation">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#">Menu2</a></li>
+							<li><a href="#">Menu2</a></li>
+							<li><a href="#">Menu3</a></li>
+						</ul>
+					</div>
+				</nav>
+    </div>
+</header>
+  <section id="ticketMenu">
+  <div class="TM-container">
+    <ul class="TM-container-flex">
+      <li class="TM-item u-flex TM-flexDir u-flexAlignItemsCenter TM-item-active">
+        <p class="TM-object"><i class="fa fa-user fa-lg"></i></p>
+        <p class="TM-label">SINGLE ATTENDEE</p>
+      </li>
+      <li class="TM-item u-flex TM-flexDir u-flexAlignItemsCenter">
+        <p class="TM-object"><i class="fa fa-users fa-lg"></i></p>
+        <p class="TM-label">GROUP TICKETS</p>
+      </li>
+      <li class="TM-item u-flex TM-flexDir u-flexAlignItemsCenter">
+        <p class="TM-object"><i class="fa fa-bullseye fa-lg"></i></p>
+        <p class="TM-label">INVESTORS</p>
+      </li>
+      <li class="TM-item u-flex TM-flexDir u-flexAlignItemsCenter">
+        <p class="TM-object"><i class="fa fa-lightbulb-o fa-lg"></i></p>
+        <p class="TM-label">STARTUPS</p>
+      </li>
+    </ul>
+    <div>
+  </section>
+  <section id="ticketActualTime">
+    <div class="TAT-container">
+      <ul class="TAT-list u-flex TAT-flexDir">
+        <li class="TAT-item">EARLY BIRD <span class="TAT-soldout">SOLD OUT</span><span class="TAT-slash">/</span></li>
+        <li class="TAT-item TAT-active">SUMMER SAVER <i class="fa fa-clock-o fa-lg TAT-clock"></i><span class="TAT-until"> UNTIL</span><span class="TAT-sept"> AVG. 31</span><span class="TAT-slash-big">/</span></li>
+        <li class="TAT-item">REGULAR <span class="TAT-slash-big">/</span></li>
+        <li class="TAT-item">LATE <span class="TAT-slash">/</span></li>
+        <li class="TAT-item">ONSITE REGISTRATION <span class="TAT-slash">/</span></li>
+
+      </ul>
+    </div>
+  </section>
+  <section id="ticketBoxes">
+    <div class="TB-container u-flex TB-flexDir">
+      <div id="summerSaver" class="TB-box">
+        <div class="TB-upper">
+          <div class="TB-upper-inner">
+            <p class="TB-head">SUMMER SAVER</p>
+            <p class="TB-price">€1595</p>
+            <p class="TB-save">Save $300</p>
+            <p class="TB-until">Until August 31.</p>
+          </div>
+        </div>
+        <div class="TB-bottom">
+          <button class="TB-button TB-button-blue">BOOK NOW</button>
+        </div>
+      </div>
+      <div id="expoOnly" class="TB-box">
+        <div class="TB-upper">
+          <div class="TB-upper-inner">
+            <p class="TB-popular">MOST POPULAR</p>
+            <p class="TB-head">EXPO ONLY</p>
+            <p class="TB-price">€299</p>
+            <p class="TB-until">Until October</p>
+          </div>
+        </div>
+        <div class="TB-bottom">
+          <button class="TB-button TB-button-red">BOOK NOW</button>
+        </div>
+      </div>
+      <div id="govSector" class="TB-box">
+        <div class="TB-upper">
+          <div class="TB-upper-inner">
+            <p class="TB-head">PUBLIC&GOVERNMENTAL SECTOR</p>
+            <p class="TB-price">€1295</p>
+            <p class="TB-save">Save $300 from the Summer Saver</p>
+            <p class="TB-until">Until October
+
+            </p>
+          </div>
+        </div>
+        <div class="TB-bottom">
+          <button class="TB-button TB-button-blue">BOOK NOW</button>
+        </div>
+      </div>
+      <div id="standarAndExpo" class="TB-box">
+        <div class="TB-upper">
+          <div class="TB-upper-inner">
+            <p class="TB-head">STANDARD CONFERENCE & EXPO</p>
+            <p class="TB-price">€1695</p>
+            <p class="TB-save">Do you have a promo code?</p>
+            <p class="TB-until">
+              <input type="text" class="TB-discount" id="DiscountField" placeholder="Type it here">
+            </p>
+          </div>
+        </div>
+        <div class="TB-bottom">
+          <button class="TB-button TB-button-blue">BOOK NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="TB-buttonContainer">
+     <button id="SeeAllButton" onclick="changeText()" class="button buttonBlue">COMPARE BENEFITS</button>
+    </div>
+  </section>
+  <section id="ticketPartners">
+    <h4>OUR TRUSTED PARTNERS</h4>
+    <div class="TP-container u-flex TP-flexDir">
+        <a href="#" target="_blank" title="Partner"><img  class="TP-logo" src="images/partnerDemo.jpg" alt="Partner"></a>
+        <a href="#" target="_blank" title="Partner"><img  class="TP-logo" src="images/partnerDemo.jpg" alt="Partner"></a>
+        <a href="#" target="_blank" title="Partner"><img  class="TP-logo" src="images/partnerDemo.jpg" alt="Partner"></a>
+        <a href="#" target="_blank" title="Partner"><img  class="TP-logo" src="images/partnerDemo.jpg" alt="Partner"></a>
+        <a href="#" target="_blank" title="Partner"><img  class="TP-logo" src="images/partnerDemo.jpg" alt="Partner"></a>
+    </div>
+  </section>
+  <footer>
+      <!-- Main Footer -->
+      <div class="footer-up">
+          <img class="FU-logo" src="images/footer-logo.svg" alt="HR Tech World">
+          <ul class="FU-HRNlinks FU-HRNlinks-flex">
+              <li class="FU-HRNitem"><a href="http://hrn.io" target="_blank" title="HRN">HRN</a></li>
+              <li class="FU-HRNitem"><a href="http://hrn.io/about" target="_blank" title="ABOUT">ABOUT</a></li>
+              <li class="FU-HRNitem"><a href="http://careers.hrn.io" target="_blank" title="JOBS">JOBS</a></li>
+              <li class="FU-HRNitem"><a href="#" target="_parent" title="CONTACT">CONTACT</a></li>
+          </ul>
+          <ul class="FU-socialIcons FU-socialIcons-flex">
+              <li class="FU-socItem"><a title="Twitter"  href="https://twitter.com/hrtechworld" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="FU-socItem"><a title="Facebook"  href="https://www.facebook.com/hrtechworld" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="FU-socItem"><a title="LinkedIn"  href="https://www.linkedin.com/grp/home?gid=3930182" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="FU-socItem"><a title="Instagram"  href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li class="FU-socItem"><a title="Slideshare"  href="https://www.slideshare" target="_blank"><i class="fa fa-slideshare"></i></a></li>
+              <li class="FU-socItem"><a title="Youtube"  href="https://www.youtube.com/user/hrneurope/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <ul class= "FB-links FB-links-flex">
+              <li class="FB-item"><span><a href="#" title="HRN">HRN</a></span><span class="FB-divider">|</span></li>
+              <li class="FB-item"><span><a href="#" title="HR Tech World Terms &amp; Conditions">Terms &amp; Conditions</a></span><span class="FB-divider">|</span></li>
+              <li class="FB-item"><span><a href="#" title="HR Tech World Cookie Policy">Cookie Policy</a></span><span class="FB-divider">|</span></li>
+              <li class="FB-item"><span >Copyright © 2017 HRN.</span><span class="FB-divider">|</span></li>
+              <li class="FB-item"><span>All Rights Reserved.</span></li>
+          </ul>
+      </div>
+  </footer>
+  <script src="js/app.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

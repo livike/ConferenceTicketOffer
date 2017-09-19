@@ -1,0 +1,259 @@
+section{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+//SECTION ticketMenu
+
+.TM {
+  &-container{
+    padding: 15px 0;
+    width:95%;
+    margin: 0 auto;
+  }
+  &-container-flex{
+    display: flex;
+    justify-content: center;
+  }
+  &-item{
+    margin: 2px 12px;
+    width: 60px;
+    text-align: center;
+    vertical-align: top;
+    transition: 0.8s;
+
+  }
+  &-item-active{
+    color: $blue-cerulean;
+  }
+  &-object{
+    display:block;
+    margin:5px;
+    font-size: 16px;
+  }
+  &-label{
+    font-size: 11px;
+    text-align: center;
+  }
+  &-flexDir {
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: column!important;
+      flex-direction: column!important;
+  	}
+}
+
+.u-flex{
+	display: flex;
+}
+.u-flexCol {
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: column!important;
+    flex-direction: column!important;
+  }
+
+.u-flexRow {
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+	}
+
+.u-flexAlignItemsCenter {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+	}
+
+.TAT {
+  &-container{
+    padding: 45px 0 35px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  &-item{
+  font-size: 15px;
+  color: $blue-mint-tulip;
+  vertical-align: middle;
+  width: 100%;
+  margin: 5px 0;
+  }
+  &-slash, &-slash-big{
+    display:none;
+  }
+  &-flexDir {
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: column!important;
+      flex-direction: column!important;
+  	}
+    &-soldout{
+      font-size: 11px;
+      padding: 3px;
+      background-color: $color-light-blue;
+      color: #fff;
+      vertical-align: middle;
+    }
+    &-active{
+      color:$color-dark-blue;
+      font-weight: 900;
+    }
+    &-clock {
+      color: $black;
+    }
+    &-until {
+      color: $black;
+      font-size: 13px;
+      font-weight: 300;
+    }
+    &-sept{
+      color: $color-red;;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+}
+//TickerBox
+.TB{
+  &-container{
+    margin: 0 auto;
+  }
+  &-box{
+    margin: 15px auto;
+    width: 320px;
+    max-height: 290px;
+    background: $color-grey-backgr;
+    -webkit-box-shadow: -1px 6px 8px 1px rgba(0,0,0,0.10);
+    -moz-box-shadow: -1px 6px 8px 1px rgba(0,0,0,0.10);
+    box-shadow: -1px 6px 8px 1px rgba(0,0,0,0.10);
+    cursor: pointer;
+  }
+  &-box-popular{
+    max-height: 300px;
+  }
+  &-upper{
+    width: 100%;
+    color: $color-dark-blue;
+    transition: background .3s ease;
+  }
+  &-upper-inner{
+    text-align: center;
+    padding: 25px 0;
+    // margin-bottom: 25px;
+  }
+  &-head{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  &-price{
+    font-size: 60px;
+    margin-bottom: 7px;
+    font-weight: 700;
+  }
+  &-save{
+    font-size: 14px;
+    color: $grey;
+    margin-bottom: 7px;
+    font-weight: 300;
+  }
+  &-until{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-bottom{
+    font-size: 14px;
+  }
+  &-button{
+    height: 60px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  &-button-blue{
+    border: 1px solid $color-dark-blue;
+    background-color: $color-dark-blue;
+    color: $white;
+  }
+  &-button-red{
+    border: 1px solid $color-red;
+    background-color: $color-red;
+    color: $white;
+  }
+  &-popular{
+      font-size: 17px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: $color-red;
+  }
+  &-flexDir {
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: column!important;
+      flex-direction: column!important;
+      justify-content: center;
+      align-items: center !important;
+   }
+
+  @media #{$breakpoint-narrow}{
+
+  &-flexDir {
+      -webkit-box-direction: normal!important;
+      -ms-flex-direction: row!important;
+      flex-direction: row!important;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center !important;
+   }
+ }
+
+  &-discount{
+    width: 88%;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+  }
+&-buttonContainer{
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+}//END of TM
+
+
+.button {
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+}
+.buttonBlue, .buttonBlue:hover {
+  border: 1px solid $color-dark-blue;
+  background: 0 0;
+  color: $color-dark-blue;
+}
+
+#ticketPartners{
+  width: 100%;
+  // max-width: 1200px;
+  margin: 82px auto 53px auto;
+  text-align: center;
+  color: #cccccc;
+}
+
+.TP {
+  &-container{
+    margin: 20px 0;
+  }
+  &-flexDir{
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-logo{
+    width: 108px;
+    height: 53px;
+    margin: 14px 21px;
+  }
+
+}

@@ -1,0 +1,28 @@
+#ticketMenu{
+  margin-top: 75px;
+  width: 100vw;
+  height: 94px;
+  background-color: $grey-alabaster;
+  -webkit-box-shadow: -1px -4px 28px -3px rgba(0,0,0,0.52);
+  -moz-box-shadow: -1px -4px 28px -3px rgba(0,0,0,0.52);
+  box-shadow: -1px -4px 28px -3px rgba(0,0,0,0.52);
+  font-family: "museo-sans";
+  overflow-y: hidden;
+}
+
+@media #{$breakpoint-narrow	} {
+  margin-top: 3.00625vw;
+  width: 100vw;
+  height: 4.9vw;
+  // height:80px;
+
+}
+
+#ticketActualTime{
+  text-align: center;
+}
+
+@media #{$breakpoint-narrow}{
+  padding: 2.760416vw 0 1.82291vw 0;
+  max-width: 52.083vw;
+}
